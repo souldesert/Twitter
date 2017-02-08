@@ -1,35 +1,52 @@
-import xml.etree.ElementTree as XmlParser
-from nltk.corpus import stopwords
-import re
+import build_model as bm
+import create_sample as cs
+import numpy as np
+import svm_model as svm
+import nb_model as nb
+import knn_model as knn
+import load_etalon_data as led
+from round import round_
+from sklearn.metrics import classification_report
 
 
-def process_text():
+# pd.prepare_data()
+model = bm.build_model()
+predictor = np.asarray(cs.create_sample(model))
+etalon = led.load_etalon_data()
 
-    # remove stopwords
-    processed_corpora = ' '.join([word for word in corpora.split() if word not in (stopwords.words('russian'))])
+test_svm_eval = []
+test_nb_eval = []
+test_knn_eval = []
 
-    # remove URLs
-    processed_corpora = ' '.join([word for word in processed_corpora.split() if not re.search(r'https?:\/\/.*[\r\n]*', word)])
+ITERATIONS = 10
 
-    # remove @mentions
-    processed_corpora = ' '.join([word for word in processed_corpora.split() if not re.search(r'@\w*', word)])
+for i in range(0, ITERATIONS):
+    print("Прогон № " + str(i + 1))
 
-    # should #hashtags be deleted?
-    # processed_corpora = u' '.join([word for word in processed_corpora.split() if not re.search(u'#\w*', word)])
+    test_nb = nb.nb_model(predictor, model)
+    test_svm = svm.svm_model(predictor, model)
+    test_knn = knn.knn_model(predictor, model)
 
-    # write processed text to file
-    processed_text_corpora = open('ttk_train_text_processed.txt', 'wb')
-    processed_text_corpora.write(processed_corpora.encode('UTF-8'))
+    test_nb_single = []
+    test_svm_single = []
+    test_knn_single = []
 
+    for j in range(0, len(etalon)):
+        test_nb_single.append(test_nb[j][3])
+        test_svm_single.append(test_svm[j][3])
+        test_knn_single.append(test_knn[j][3])
 
-tree = XmlParser.parse('Corpora/ttk_train.xml')
-root = tree.getroot()
-corpora = ''
-for twit in root.iter('column'):
-    if twit.attrib['name'] == 'text':
-        corpora += twit.text + ' '  # + '\n'
-text_corpora = open('ttk_train_text.txt', 'wb')
-text_corpora.write(corpora.encode('UTF-8'))
+    test_nb_eval.append(test_nb_single)
+    test_svm_eval.append(test_svm_single)
+    test_knn_eval.append(test_knn_single)
 
+target_names = ['negative', 'neutral', 'positive']
 
-process_text()
+print("\nРезультаты алгоритма Naive Bayes:\n")
+print(classification_report(etalon, round_(test_nb_eval), target_names=target_names) + '\n')
+
+print("Результаты алгоритма SVM:\n")
+print(classification_report(etalon, round_(test_svm_eval), target_names=target_names) + '\n')
+
+print("Результаты алгоритма K Nearest Neighbors:\n")
+print(classification_report(etalon, round_(test_knn_eval), target_names=target_names) + '\n')

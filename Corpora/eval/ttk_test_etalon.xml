@@ -2539,7 +2539,7 @@
             <column name="id">205</column>
             <column name="twitid">409921525626568704</column>
             <column name="date">1386567882</column>
-            <column name="text">@kambot3 Добрый день!К сожалению,точной даты запуска сети нет.Следите,пожалуйста,за новостями на нашем сайте:http://t.co/J2Hv0TMzB2.#билайн</column>
+            <column name="text">@kambot3 Добрый день!К сожалению,точной даты запуска сети нет.Следите,пожалуйста,за новостями на нашем сайте: http://t.co/J2Hv0TMzB2. #билайн</column>
             <column name="beeline">0</column>
             <column name="mts">NULL</column>
             <column name="megafon">NULL</column>
@@ -4738,7 +4738,7 @@
             <column name="id">388</column>
             <column name="twitid">410409974506856449</column>
             <column name="date">1386684337</column>
-            <column name="text">С 3 декабря по 28 января подключайте «Бесконечный интернет на год» и покупайте iPhone 5s 16Гб за 24 990 руб в #Билайн.http://t.co/xrapP1FLzj</column>
+            <column name="text">С 3 декабря по 28 января подключайте «Бесконечный интернет на год» и покупайте iPhone 5s 16Гб за 24 990 руб в #Билайн. http://t.co/xrapP1FLzj</column>
             <column name="beeline">0</column>
             <column name="mts">NULL</column>
             <column name="megafon">NULL</column>
@@ -11627,7 +11627,7 @@ https://t.co/a9rFolQZS3
             <column name="id">965</column>
             <column name="twitid">413172306576687105</column>
             <column name="date">1387342928</column>
-            <column name="text">Как Вы бы выстроили при раздаче ЗВЕЗД операторов СотСвязи:МТС,Мегафон,Билайн?http://t.co/4jsWa4Y97Q http://t.co/ze7PnQWgfM</column>
+            <column name="text">Как Вы бы выстроили при раздаче ЗВЕЗД операторов СотСвязи:МТС,Мегафон,Билайн? http://t.co/4jsWa4Y97Q http://t.co/ze7PnQWgfM</column>
             <column name="beeline">0</column>
             <column name="mts">0</column>
             <column name="megafon">0</column>
@@ -16634,7 +16634,7 @@ via @applifto http://t.co/owuygqPasO http://t.co/XUAeqdXMfl</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">1420</column>
             <column name="twitid">415148178736807937</column>
             <column name="date">1387814013</column>
@@ -16646,7 +16646,7 @@ via @applifto http://t.co/owuygqPasO http://t.co/XUAeqdXMfl</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">1421</column>
             <column name="twitid">415148176572567552</column>
@@ -21025,7 +21025,7 @@ via @applifto http://t.co/owuygqPasO http://t.co/XUAeqdXMfl</column>
             <column name="id">1800</column>
             <column name="twitid">416908184234635265</column>
             <column name="date">1388233631</column>
-            <column name="text">@okhudyakov Для автоинформирования об изменениях Вы можете подключить подписку на новости на сайте http://t.co/WvRyIfBadz(бесплатно).#билайн</column>
+            <column name="text">@okhudyakov Для автоинформирования об изменениях Вы можете подключить подписку на новости на сайте http://t.co/WvRyIfBadz (бесплатно). #билайн</column>
             <column name="beeline">0</column>
             <column name="mts">NULL</column>
             <column name="megafon">NULL</column>
@@ -36944,7 +36944,7 @@ http://t.co/nF82FxpKyu
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">3204</column>
             <column name="twitid">410090695958233088</column>
             <column name="date">1386608215</column>
@@ -36956,7 +36956,7 @@ http://t.co/nF82FxpKyu
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">3205</column>
             <column name="twitid">410117721251381249</column>
@@ -37961,7 +37961,7 @@ http://t.co/nF82FxpKyu
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">3325</column>
             <column name="twitid">410635768030175232</column>
             <column name="date">1386738171</column>
@@ -37973,7 +37973,7 @@ http://t.co/nF82FxpKyu
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">3327</column>
             <column name="twitid">410637416392032256</column>
@@ -44621,7 +44621,7 @@ http://t.co/2AWll1liY0”а улучшить качество связи,не?:)
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4219</column>
             <column name="twitid">413302149339426816</column>
             <column name="date">1387373885</column>
@@ -44633,7 +44633,7 @@ http://t.co/2AWll1liY0”а улучшить качество связи,не?:)
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4220</column>
             <column name="twitid">413302147657502720</column>
@@ -46393,7 +46393,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4483</column>
             <column name="twitid">414000582505299968</column>
             <column name="date">1387540405</column>
@@ -46405,7 +46405,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4484</column>
             <column name="twitid">414002896465055744</column>
@@ -47829,7 +47829,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4673</column>
             <column name="twitid">414794465359171584</column>
             <column name="date">1387729681</column>
@@ -47841,7 +47841,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4675</column>
             <column name="twitid">414795425468928001</column>
@@ -47920,7 +47920,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4687</column>
             <column name="twitid">414814838054199296</column>
             <column name="date">1387734538</column>
@@ -47932,7 +47932,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4688</column>
             <column name="twitid">414966175039504385</column>
@@ -49497,7 +49497,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4888</column>
             <column name="twitid">415362703792676864</column>
             <column name="date">1387865160</column>
@@ -49509,7 +49509,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4889</column>
             <column name="twitid">415363342471946241</column>
@@ -49536,7 +49536,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4892</column>
             <column name="twitid">415365490081800192</column>
             <column name="date">1387865824</column>
@@ -49548,7 +49548,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4899</column>
             <column name="twitid">415366586891923456</column>
@@ -49825,7 +49825,7 @@ http://t.co/IzvRHybuts</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
         </table>
-        <table name="ttk_test_etalon_noname">
+<!--         <table name="ttk_test_etalon_noname">
             <column name="id">4951</column>
             <column name="twitid">415553559757737984</column>
             <column name="date">1387910663</column>
@@ -49837,7 +49837,7 @@ http://t.co/IzvRHybuts</column>
             <column name="rostelecom">NULL</column>
             <column name="komstar">NULL</column>
             <column name="skylink">NULL</column>
-        </table>
+        </table> -->
         <table name="ttk_test_etalon_noname">
             <column name="id">4953</column>
             <column name="twitid">415558498848882688</column>
