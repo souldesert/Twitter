@@ -1,14 +1,8 @@
 from sklearn.naive_bayes import GaussianNB
 import numpy as np
-import load_test_data as ltd
 
-from sklearn.neural_network import MLPClassifier
-from sklearn.linear_model import SGDClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn import tree
-from sklearn import svm
 
-def nb_model(predictor, model):
+def nb_model(predictor, test_data):
     predictor_beeline = np.array(list(predictor[predictor[:, 2] == 'beeline'][:, 0]))
     target_beeline = np.array(list(predictor[predictor[:, 2] == 'beeline'][:, 1]))
 
@@ -45,10 +39,12 @@ def nb_model(predictor, model):
     gnb_rostelecom = GaussianNB()
     gnb_rostelecom.fit(predictor_rostelecom, target_rostelecom)
 
-    gnb_skylink = GaussianNB()
-    gnb_skylink.fit(predictor_skylink, target_skylink)
+    # gnb_skylink = GaussianNB()
+    # gnb_skylink.fit(predictor_skylink, target_skylink)
 
-    test = ltd.load_test_data(model)
+    # test = ltd.load_test_data(model)
+    test = test_data
+    test_result = []
 
     for row in test:
         if row[2] == 'beeline':
@@ -64,11 +60,13 @@ def nb_model(predictor, model):
         elif row[2] == 'komstar':
             result = 0  # gnb_komstar.predict(row[0])
         else:
-            result = gnb_skylink.predict(np.reshape(row[1], (1, -1)))
+            result = 0  # gnb_skylink.predict(np.reshape(row[1], (1, -1)))
 
         try:
-            row.append(result[0])
+            # row.append(result[0])
+            test_result.append(result[0])
         except TypeError:
-            row.append(result)
+            # row.append(result)
+            test_result.append(result)
 
-    return test
+    return test_result

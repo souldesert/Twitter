@@ -6,7 +6,7 @@ import load_test_data as ltd
 K_NEIGHBORS = 25
 
 
-def knn_model(predictor, model):
+def knn_model(predictor, test_data):
 
     predictor_beeline = np.array(list(predictor[predictor[:, 2] == 'beeline'][:, 0]))
     target_beeline = np.array(list(predictor[predictor[:, 2] == 'beeline'][:, 1]))
@@ -43,14 +43,18 @@ def knn_model(predictor, model):
     
     knn_model_rostelecom = neighbors.KNeighborsClassifier(K_NEIGHBORS, 'distance')
     knn_model_rostelecom.fit(predictor_rostelecom, target_rostelecom)
-    
-    knn_model_komstar = neighbors.KNeighborsClassifier(K_NEIGHBORS, 'distance')
-    knn_model_komstar.fit(predictor_komstar, target_komstar)
-    
-    knn_model_skylink = neighbors.KNeighborsClassifier(K_NEIGHBORS, 'distance')
-    knn_model_skylink.fit(predictor_skylink, target_skylink)
 
-    test = ltd.load_test_data(model)
+
+    # knn_model_komstar = neighbors.KNeighborsClassifier(K_NEIGHBORS, 'distance')
+    # knn_model_komstar.fit(predictor_komstar, target_komstar)
+    #
+    # knn_model_skylink = neighbors.KNeighborsClassifier(K_NEIGHBORS, 'distance')
+    # knn_model_skylink.fit(predictor_skylink, target_skylink)
+
+    # test = ltd.load_test_data(model)
+    # тест - список
+    test = test_data
+    test_result = []
 
     for row in test:
         if row[2] == 'beeline':
@@ -66,11 +70,13 @@ def knn_model(predictor, model):
         elif row[2] == 'komstar':
             result = 0  # knn_model_komstar.predict(row[0])
         else:
-            result = knn_model_skylink.predict(np.reshape(row[1], (1, -1)))
+            result = 0 # knn_model_skylink.predict(np.reshape(row[1], (1, -1)))
 
         try:
-            row.append(result[0])
+            #row.append(result[0])
+            test_result.append(result[0])
         except TypeError:
-            row.append(result)
+            #row.append(result)
+            test_result.append(result)
 
-    return test
+    return test_result
